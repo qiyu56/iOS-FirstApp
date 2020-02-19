@@ -8,6 +8,7 @@
 
 #import "RootTableViewController.h"
 #import "EditingCellViewController.h"
+#import "TextViewController.h"
 
 @interface RootTableViewController ()
 
@@ -24,7 +25,7 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"rootTableViewCell"];
     
-    self.titles = @[@"EditingTableViewCell"];
+    self.titles = @[@"EditingTableViewCell", @"BottomTextBarView"];
     self.title = @"First App";
 }
 
@@ -50,6 +51,9 @@
         case 0: {
             [self.navigationController pushViewController:[[EditingCellViewController alloc] init] animated:YES];
             break;
+        }
+        case 1: {
+            [self.navigationController pushViewController:[[TextViewController alloc] init] animated:YES];
         }
             
         default:
