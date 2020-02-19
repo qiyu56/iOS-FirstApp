@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EditingCellViewController.h
 //  FirstApp
 //
 //  Created by qiyu on 2020/2/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface EditingCellViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

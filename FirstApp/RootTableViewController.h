@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  RootTableViewController.h
 //  FirstApp
 //
 //  Created by qiyu on 2020/2/19.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow * window;
+@interface RootTableViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
