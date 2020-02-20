@@ -17,6 +17,8 @@
 		7B1A1DFE23FCE14000FC7B76 /* EditingCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A1DFD23FCE14000FC7B76 /* EditingCellViewController.m */; };
 		7B1A1E0223FD586500FC7B76 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A1E0123FD586500FC7B76 /* TextViewController.m */; };
 		7B1A1E0523FD589200FC7B76 /* TextBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A1E0423FD589200FC7B76 /* TextBar.m */; };
+		7B1A1E0923FEA9F000FC7B76 /* LocationAndMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A1E0823FEA9F000FC7B76 /* LocationAndMapViewController.m */; };
+		7B1A1E1723FEC9DC00FC7B76 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1A1E1623FEC9DC00FC7B76 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,11 @@
 		7B1A1E0123FD586500FC7B76 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		7B1A1E0323FD589200FC7B76 /* TextBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextBar.h; sourceTree = "<group>"; };
 		7B1A1E0423FD589200FC7B76 /* TextBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextBar.m; sourceTree = "<group>"; };
+		7B1A1E0723FEA9F000FC7B76 /* LocationAndMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationAndMapViewController.h; sourceTree = "<group>"; };
+		7B1A1E0823FEA9F000FC7B76 /* LocationAndMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationAndMapViewController.m; sourceTree = "<group>"; };
+		7B1A1E0A23FEB6DA00FC7B76 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1A1E1323FEB7F100FC7B76 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1A1E1623FEC9DC00FC7B76 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAAA4F576199E3ED39973647 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
 		D72914652F60C0552BEE0121 /* Pods_FirstApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1A1E1723FEC9DC00FC7B76 /* MapKit.framework in Frameworks */,
 				25F2046ED715280F83884F7B /* Pods_FirstApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +82,7 @@
 		7B1A1DD823FCD5B400FC7B76 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				7B1A1E0623FEA9AA00FC7B76 /* LocationAndMap */,
 				7B1A1DFF23FD582400FC7B76 /* BottomTextBarView */,
 				7B1A1DFB23FCE0FD00FC7B76 /* EditingTableViewCell */,
 				7B1A1DD923FCD5B400FC7B76 /* AppDelegate.h */,
@@ -109,6 +118,15 @@
 			path = BottomTextBarView;
 			sourceTree = "<group>";
 		};
+		7B1A1E0623FEA9AA00FC7B76 /* LocationAndMap */ = {
+			isa = PBXGroup;
+			children = (
+				7B1A1E0723FEA9F000FC7B76 /* LocationAndMapViewController.h */,
+				7B1A1E0823FEA9F000FC7B76 /* LocationAndMapViewController.m */,
+			);
+			path = LocationAndMap;
+			sourceTree = "<group>";
+		};
 		87680EF1D2963337ADFEEC1E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +139,9 @@
 		D15C0A146A1D0E5B1EC099DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B1A1E1623FEC9DC00FC7B76 /* MapKit.framework */,
+				7B1A1E1323FEB7F100FC7B76 /* Masonry.framework */,
+				7B1A1E0A23FEB6DA00FC7B76 /* Masonry.framework */,
 				D72914652F60C0552BEE0121 /* Pods_FirstApp.framework */,
 			);
 			name = Frameworks;
@@ -241,6 +262,7 @@
 			files = (
 				7B1A1DFA23FCDE1400FC7B76 /* RootTableViewController.m in Sources */,
 				7B1A1DEF23FCD5B800FC7B76 /* main.m in Sources */,
+				7B1A1E0923FEA9F000FC7B76 /* LocationAndMapViewController.m in Sources */,
 				7B1A1DDB23FCD5B400FC7B76 /* AppDelegate.m in Sources */,
 				7B1A1E0523FD589200FC7B76 /* TextBar.m in Sources */,
 				7B1A1E0223FD586500FC7B76 /* TextViewController.m in Sources */,
@@ -313,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -365,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.FirstApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiyu.FirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,7 +427,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.FirstApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiyu.FirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

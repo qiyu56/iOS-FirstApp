@@ -9,6 +9,7 @@
 #import "RootTableViewController.h"
 #import "EditingCellViewController.h"
 #import "TextViewController.h"
+#import "LocationAndMapViewController.h"
 
 @interface RootTableViewController ()
 
@@ -25,7 +26,7 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"rootTableViewCell"];
     
-    self.titles = @[@"EditingTableViewCell", @"BottomTextBarView"];
+    self.titles = @[@"EditingTableViewCell", @"BottomTextBarView", @"LocationAndMap"];
     self.title = @"First App";
 }
 
@@ -54,6 +55,11 @@
         }
         case 1: {
             [self.navigationController pushViewController:[[TextViewController alloc] init] animated:YES];
+            break;
+        }
+        case 2: {
+            [self.navigationController pushViewController:[[LocationAndMapViewController alloc] init] animated:YES];
+            break;
         }
             
         default:

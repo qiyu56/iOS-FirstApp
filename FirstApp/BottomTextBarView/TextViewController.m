@@ -55,6 +55,10 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
+//    UIScreenEdgePanGestureRecognizer *pan = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction)];
+//    pan.edges = UIRectEdgeTop;
+//    [self.view addGestureRecognizer:pan];
 }
 
 - (void)keyboardWillShow:(NSNotification *)note {
@@ -84,5 +88,9 @@
         self.label.hidden = NO;
     }
 }
+
+//- (void)panAction {
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 @end
