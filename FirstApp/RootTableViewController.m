@@ -10,6 +10,8 @@
 #import "EditingCellViewController.h"
 #import "TextViewController.h"
 #import "LocationAndMapViewController.h"
+#import "HaveLabelViewController.h"
+#import "TransitionAnimationViewController.h"
 
 @interface RootTableViewController ()
 
@@ -26,7 +28,7 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"rootTableViewCell"];
     
-    self.titles = @[@"EditingTableViewCell", @"BottomTextBarView", @"LocationAndMap"];
+    self.titles = @[@"EditingTableViewCell", @"BottomTextBarView", @"LocationAndMap", @"LabelInView", @"TransitionAnimation"];
     self.title = @"First App";
 }
 
@@ -59,6 +61,14 @@
         }
         case 2: {
             [self.navigationController pushViewController:[[LocationAndMapViewController alloc] init] animated:YES];
+            break;
+        }
+        case 3: {
+            [self.navigationController pushViewController:[[HaveLabelViewController alloc] init] animated:YES];
+            break;
+        }
+        case 4: {
+            [self.navigationController pushViewController:[[TransitionAnimationViewController alloc] init] animated:YES];
             break;
         }
             
