@@ -27,6 +27,8 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"rootTableViewCell"];
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone; //cell间无分割线
+//    self.tableView.separatorInset = UIEdgeInsetsZero; //可用于修改分割线的EdgeInset
     
     self.titles = @[@"EditingTableViewCell", @"BottomTextBarView", @"LocationAndMap", @"LabelInView", @"TransitionAnimation"];
     self.title = @"First App";
