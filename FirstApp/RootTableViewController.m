@@ -11,7 +11,7 @@
 #import "TextViewController.h"
 #import "LocationAndMapViewController.h"
 #import "HaveLabelViewController.h"
-#import "TransitionAnimationViewController.h"
+#import "CoreAnimationTableTableViewController.h"
 
 @interface RootTableViewController ()
 
@@ -70,7 +70,7 @@
             break;
         }
         case 4: {
-            [self.navigationController pushViewController:[[TransitionAnimationViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[CoreAnimationTableTableViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
             break;
         }
             

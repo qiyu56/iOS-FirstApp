@@ -1,8 +1,8 @@
 //
-//  TransitionAnimationViewController.h
+//  BasicAnimationViewController.h
 //  FirstApp
 //
-//  Created by qiyu on 2020/3/5.
+//  Created by qiyu on 2020/3/6.
 //  Copyright © 2020 com.qiyu. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TransitionAnimationViewController : UIViewController
+@interface BasicAnimationViewController : UIViewController
 
 @end
 

@@ -20,6 +20,10 @@
 		7B1A1E0923FEA9F000FC7B76 /* LocationAndMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A1E0823FEA9F000FC7B76 /* LocationAndMapViewController.m */; };
 		7B1A1E1723FEC9DC00FC7B76 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1A1E1623FEC9DC00FC7B76 /* MapKit.framework */; };
 		7B1A1E1B2405614D00FC7B76 /* HaveLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1A1E1A2405614D00FC7B76 /* HaveLabelViewController.m */; };
+		7B2C719F24123D17002CD50D /* CoreAnimationTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C719E24123D17002CD50D /* CoreAnimationTableTableViewController.m */; };
+		7B2C71A5241240AC002CD50D /* KeyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C71A4241240AC002CD50D /* KeyFrameAnimationViewController.m */; };
+		7B2C71A924124BFD002CD50D /* BasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C71A724124BFD002CD50D /* BasicAnimationViewController.m */; };
+		7B2C71AA24124BFD002CD50D /* BasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2C71A824124BFD002CD50D /* BasicAnimationViewController.xib */; };
 		7B511C3024111B4D007F7563 /* TransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B511C2F24111B4D007F7563 /* TransitionAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,13 @@
 		7B1A1E1623FEC9DC00FC7B76 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7B1A1E192405614D00FC7B76 /* HaveLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaveLabelViewController.h; sourceTree = "<group>"; };
 		7B1A1E1A2405614D00FC7B76 /* HaveLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaveLabelViewController.m; sourceTree = "<group>"; };
+		7B2C719D24123D17002CD50D /* CoreAnimationTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationTableTableViewController.h; sourceTree = "<group>"; };
+		7B2C719E24123D17002CD50D /* CoreAnimationTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationTableTableViewController.m; sourceTree = "<group>"; };
+		7B2C71A3241240AC002CD50D /* KeyFrameAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyFrameAnimationViewController.h; sourceTree = "<group>"; };
+		7B2C71A4241240AC002CD50D /* KeyFrameAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyFrameAnimationViewController.m; sourceTree = "<group>"; };
+		7B2C71A624124BFD002CD50D /* BasicAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicAnimationViewController.h; sourceTree = "<group>"; };
+		7B2C71A724124BFD002CD50D /* BasicAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationViewController.m; sourceTree = "<group>"; };
+		7B2C71A824124BFD002CD50D /* BasicAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicAnimationViewController.xib; sourceTree = "<group>"; };
 		7B511C2E24111B4D007F7563 /* TransitionAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationViewController.h; sourceTree = "<group>"; };
 		7B511C2F24111B4D007F7563 /* TransitionAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationViewController.m; sourceTree = "<group>"; };
 		CAAA4F576199E3ED39973647 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +99,7 @@
 		7B1A1DD823FCD5B400FC7B76 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				7B511C2D24111B2B007F7563 /* TransitionAnimation */,
+				7B511C2D24111B2B007F7563 /* CoreAnimation */,
 				7B1A1E182405611700FC7B76 /* Label */,
 				7B1A1E0623FEA9AA00FC7B76 /* LocationAndMap */,
 				7B1A1DFF23FD582400FC7B76 /* BottomTextBarView */,
@@ -144,13 +155,20 @@
 			path = Label;
 			sourceTree = "<group>";
 		};
-		7B511C2D24111B2B007F7563 /* TransitionAnimation */ = {
+		7B511C2D24111B2B007F7563 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				7B511C2E24111B4D007F7563 /* TransitionAnimationViewController.h */,
 				7B511C2F24111B4D007F7563 /* TransitionAnimationViewController.m */,
+				7B2C719D24123D17002CD50D /* CoreAnimationTableTableViewController.h */,
+				7B2C719E24123D17002CD50D /* CoreAnimationTableTableViewController.m */,
+				7B2C71A3241240AC002CD50D /* KeyFrameAnimationViewController.h */,
+				7B2C71A4241240AC002CD50D /* KeyFrameAnimationViewController.m */,
+				7B2C71A624124BFD002CD50D /* BasicAnimationViewController.h */,
+				7B2C71A724124BFD002CD50D /* BasicAnimationViewController.m */,
+				7B2C71A824124BFD002CD50D /* BasicAnimationViewController.xib */,
 			);
-			path = TransitionAnimation;
+			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 		87680EF1D2963337ADFEEC1E /* Pods */ = {
@@ -233,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1A1DEC23FCD5B800FC7B76 /* LaunchScreen.storyboard in Resources */,
+				7B2C71AA24124BFD002CD50D /* BasicAnimationViewController.xib in Resources */,
 				7B1A1DE923FCD5B800FC7B76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,9 +310,12 @@
 				7B511C3024111B4D007F7563 /* TransitionAnimationViewController.m in Sources */,
 				7B1A1E1B2405614D00FC7B76 /* HaveLabelViewController.m in Sources */,
 				7B1A1E0923FEA9F000FC7B76 /* LocationAndMapViewController.m in Sources */,
+				7B2C719F24123D17002CD50D /* CoreAnimationTableTableViewController.m in Sources */,
 				7B1A1DDB23FCD5B400FC7B76 /* AppDelegate.m in Sources */,
+				7B2C71A924124BFD002CD50D /* BasicAnimationViewController.m in Sources */,
 				7B1A1E0523FD589200FC7B76 /* TextBar.m in Sources */,
 				7B1A1E0223FD586500FC7B76 /* TextViewController.m in Sources */,
+				7B2C71A5241240AC002CD50D /* KeyFrameAnimationViewController.m in Sources */,
 				7B1A1DE723FCD5B400FC7B76 /* FirstApp.xcdatamodeld in Sources */,
 				7B1A1DFE23FCE14000FC7B76 /* EditingCellViewController.m in Sources */,
 			);
